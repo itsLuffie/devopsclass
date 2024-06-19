@@ -1,0 +1,13 @@
+name: simple ci workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  mytestbuilds:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: PRINT A TEST MESSAGE
+      run: echo "hello form $GITHUB_ACTOR!"
